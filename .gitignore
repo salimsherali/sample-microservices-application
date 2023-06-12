@@ -1,0 +1,8 @@
+backend/gateway/node_modules/
+backend/gateway/.env
+
+backend/ms-listener/.env
+backend/ms-listener/node_modules/
+
+backend/ms-worker/node_modules/
+backend/ms-worker/.env

@@ -1,0 +1,22 @@
+{
+  "name": "sample-microservices-application-worker",
+  "version": "1.0.0",
+  "description": "Scalable microservices-based application that processes and distributes messages using RabbitMQ, with a frontend interface for managing and displaying the messages.",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/salimsherali/sample-microservices-application.git"
+  },
+  "author": "Salim Sherali",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/salimsherali/sample-microservices-application/issues"
+  },
+  "homepage": "https://github.com/salimsherali/sample-microservices-application#readme",
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}
