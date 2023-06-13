@@ -1,4 +1,4 @@
-# sample-microservices-application
+# Sample Microservices Application
 Scalable microservices-based application that processes and distributes messages using RabbitMQ, with a frontend interface for managing and displaying the messages.
 
 ## Installation / Setup
