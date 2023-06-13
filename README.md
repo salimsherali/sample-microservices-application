@@ -17,11 +17,7 @@ Step 3.3: Bind queue(SMA_Message_Q) with exchange(SMA_Message_X), and use routin
 Step 4.0: Setup Listener
 ```bash
     cd backend\ms-listener
-```
-```bash
     cp config-example.js config.js
-```
-```bash
     npm install
 ```
 Step 4.1: Start Listener
