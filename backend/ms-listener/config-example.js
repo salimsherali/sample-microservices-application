@@ -9,7 +9,7 @@ module.exports = {
             user: "root",
             password: "",
             port: '3306',
-            database: 'sam'
+            database: 'sample_am_gateway'
         },
         amqp: {
             host:'localhost:5672',

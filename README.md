@@ -5,6 +5,15 @@ Scalable microservices-based application that processes and distributes messages
 Step 1: Clone the repository
 
 Step 2.0: Setup Gateway
+```bash
+    cd backend\gateway
+
+    cp .env-example .env
+    
+    npm install
+
+    npx sequelize-cli db:migrate
+```
 
 Step 3.0: Installation & Configure RabbitMQ
 
@@ -19,7 +28,7 @@ Step 4.0: Setup Listener
     cd backend\ms-listener
 
     cp config-example.js config.js
-    
+
     npm install
 ```
 Step 4.1: Start Listener
