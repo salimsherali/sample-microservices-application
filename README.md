@@ -7,8 +7,11 @@ Step 1: Clone the repository
 Step 2.0: Setup Gateway
 
 Step 3.0: Installation & Configure RabbitMQ
+
 Step 3.1: Add exchange name SMA_Message_X
+
 Step 3.2: Add queue name SMA_Message_Q
+
 Step 3.3: Bind queue(SMA_Message_Q) with exchange(SMA_Message_X), and use routing key SMA_Message_K 
 
 Step 4.0: Setup Listener
