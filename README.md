@@ -15,6 +15,18 @@ Step 2.0: Setup Gateway
     npx sequelize-cli db:migrate
 ```
 
+Step 2.1: You need DB connection information to your .env file
+
+DB_HOST
+
+DB_PORT
+
+DB_DATABASE
+
+DB_USERNAME
+
+DB_PASSWORD
+
 Step 3.0: Installation & Configure RabbitMQ
 
 Step 3.1: Add exchange name SMA_Message_X
@@ -31,7 +43,20 @@ Step 4.0: Setup Listener
 
     npm install
 ```
-Step 4.1: Start Listener
+
+Step 4.1: You need DB connection information to your .env file
+
+DB_HOST
+
+DB_PORT
+
+DB_DATABASE
+
+DB_USERNAME
+
+DB_PASSWORD
+
+Step 4.2: Start Listener
 ```bash
     node MessageListener.js
 ```
