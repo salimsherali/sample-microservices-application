@@ -17,15 +17,15 @@ Step 2.0: Setup Gateway
 
 Step 2.1: You need DB connection information to your .env file
 
-DB_HOST
+    DB_HOST
 
-DB_PORT
+    DB_PORT
 
-DB_DATABASE
+    DB_NAME
 
-DB_USERNAME
+    DB_USERNAME
 
-DB_PASSWORD
+    DB_PASSWORD
 
 Step 3.0: Installation & Configure RabbitMQ
 
@@ -46,15 +46,15 @@ Step 4.0: Setup Listener
 
 Step 4.1: You need DB connection information to your .env file
 
-DB_HOST
+    DB_HOST
 
-DB_PORT
+    DB_PORT
 
-DB_DATABASE
+    DB_NAME
 
-DB_USERNAME
+    DB_USERNAME
 
-DB_PASSWORD
+    DB_PASSWORD
 
 Step 4.2: Start Listener
 ```bash
