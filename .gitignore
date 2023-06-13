@@ -1,8 +1,10 @@
 backend/gateway/node_modules/
 backend/gateway/.env
 
-backend/ms-listener/.env
 backend/ms-listener/node_modules/
+backend/ms-listener/.env
+backend/ms-listener/config.js
 
 backend/ms-worker/node_modules/
 backend/ms-worker/.env
+backend/ms-worker/config.js
