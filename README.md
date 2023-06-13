@@ -11,8 +11,6 @@ Step 2.0: Setup Gateway
     cp .env-example .env
     
     npm install
-
-    npx sequelize-cli db:migrate
 ```
 
 Step 2.1: You need DB connection information to your .env file
@@ -27,6 +25,12 @@ Step 2.1: You need DB connection information to your .env file
 
     DB_PASSWORD
 
+Step 3.0: run migrate
+```bash
+
+    npx sequelize-cli db:migrate
+```
+
 Step 3.0: Installation & Configure RabbitMQ
 
 Step 3.1: Add exchange name SMA_Message_X
@@ -38,9 +42,9 @@ Step 3.3: Bind queue(SMA_Message_Q) with exchange(SMA_Message_X), and use routin
 Step 4.0: Setup Listener
 ```bash
     cd backend\ms-listener
-
+    
     cp config-example.js config.js
-
+    
     npm install
 ```
 
