@@ -25,7 +25,7 @@ Step 2.1: You need DB connection information to your .env file
 
     DB_PASSWORD
 
-Step 3.0: run migrate
+Step 2.2: run migrate
 ```bash
 
     npx sequelize-cli db:migrate
@@ -63,4 +63,12 @@ Step 4.1: You need DB connection information to your .env file
 Step 4.2: Start Listener
 ```bash
     node MessageListener.js
+```
+Step 5.0: Setup Frontend (Reactjs Application)
+```bash
+    cd frontend\react-app
+    
+    npm install
+
+    npm run build or npm start
 ```
