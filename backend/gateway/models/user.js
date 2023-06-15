@@ -1,7 +1,12 @@
 'use strict';
 const {
-  Model
+  Model,Sequelize, DataTypes
 } = require('sequelize');
+
+
+
+const bcrypt = require('bcrypt');
+
 module.exports = (sequelize, DataTypes) => {
   class User extends Model {
     /**
@@ -17,10 +22,17 @@ module.exports = (sequelize, DataTypes) => {
     name: DataTypes.STRING,
     email: DataTypes.STRING,
     password: DataTypes.STRING,
-    status: DataTypes.ENUM('active', 'de-active', 'pending','deleted')
+    status: DataTypes.ENUM('active', 'de-active', 'pending', 'deleted')
   }, {
     sequelize,
     modelName: 'User',
   });
+
+  // Hash the password before saving to the database
+  User.beforeCreate(async (user) => {
+    const hashedPassword = await bcrypt.hash(user.password, 10);
+    user.password = hashedPassword;
+  });
+
   return User;
 };

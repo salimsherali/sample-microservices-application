@@ -8,3 +8,6 @@ backend/ms-listener/config.js
 backend/ms-worker/node_modules/
 backend/ms-worker/.env
 backend/ms-worker/config.js
+
+frontend/react-app/node_modules/
+frontend/react-app/build/

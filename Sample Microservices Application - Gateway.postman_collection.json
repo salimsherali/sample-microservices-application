@@ -1,0 +1,56 @@
+{
+	"info": {
+		"_postman_id": "47682485-46f4-41a1-a09c-8cd14049c9de",
+		"name": "Sample Microservices Application - Gateway",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "10718799"
+	},
+	"item": [
+		{
+			"name": "login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"username\":\"admin@admin.com\",\r\n    \"password\":\"adminadmin\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{host}}login",
+					"host": [
+						"{{host}}login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "register",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"email\":\"admin@admin.com\",\r\n    \"password\":\"adminadmin\",\r\n    \"name\":\"admin\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{host}}register",
+					"host": [
+						"{{host}}register"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
