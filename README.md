@@ -48,7 +48,7 @@ Step 4.0: Setup Listener
     npm install
 ```
 
-Step 4.1: You need DB connection information to your .env file
+Step 4.1: You need DB connection information to your config.js file
 
     DB_HOST
 
@@ -64,7 +64,32 @@ Step 4.2: Start Listener
 ```bash
     node MessageListener.js
 ```
+
 Step 5.0: Setup Worker 
+```bash
+    cd backend\ms-listener
+    
+    cp config-example.js config.js
+    
+    npm install
+```
+
+Step 5.1: You need DB connection information to your config.js file
+
+    DB_HOST
+
+    DB_PORT
+
+    DB_NAME
+
+    DB_USERNAME
+
+    DB_PASSWORD
+
+Step 5.2: Start Worker
+```bash
+    node MessageWorker.js
+```
 
 Step 6.0: Setup Frontend (Reactjs Application)
 ```bash
