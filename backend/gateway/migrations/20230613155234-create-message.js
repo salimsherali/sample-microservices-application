@@ -18,6 +18,9 @@ module.exports = {
       to_user_id: {
         type: Sequelize.INTEGER
       },
+      to_number: {
+        type: Sequelize.STRING
+      },
       status: {
         type: Sequelize.ENUM('pending','process','sent','delivered','failed','un-deliverable','expired','rejected','invalid','unknown','buffered','deleted')
       },

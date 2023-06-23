@@ -1,8 +1,10 @@
 import React, { useState } from 'react';
 import { Button, Container, Form, Alert } from 'react-bootstrap';
+import axios from 'axios';
 import '../asset/css/Login.css'; // Import custom CSS for Login component styling
 
 const Login = () => {
+  const api_base_url = process.env.REACT_APP_API_URL;
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
   const [error, setError] = useState('');
@@ -26,32 +28,31 @@ const Login = () => {
       setError('Please enter both email and password.');
       return;
     }
-
+    // Login successful, store the token in local storage
+   
     // Make the API call to login
-    // Replace 'api/login' with your actual login API endpoint
-    fetch('api/login', {
-      method: 'POST',
-      headers: {
-        'Content-Type': 'application/json',
-      },
-      body: JSON.stringify({
-        email: email,
+    axios
+      .post(`${api_base_url}/login`, {
+        username: email,
         password: password,
-      }),
-    })
-      .then((response) => {
-        if (!response.ok) {
-          throw new Error('An error occurred during login.');
-        }
-        return response.json();
       })
-      .then((data) => {
-        if (data.success) {
-          // Login successful, store the token in local storage
-          localStorage.setItem('token', data.token);
+      .then((response) => {
+        // console.log('response:', response);
+        const data = response.data;
+        // console.log('response.data:', responses.data);
+        if (data.status) {
+          try{
 
-          // Redirect to the dashboard
-          window.location.href = '/dashboard';
+            // Login successful, store the token in local storage
+            localStorage.setItem('token', data.result.token);
+            localStorage.setItem('user_data', JSON.stringify(data.result.user));
+            // Redirect to the dashboard
+            window.location.href = '/dashboard';
+          }catch(error){
+            console.error('Error:', error);
+            setError('Error in token. ' + error.message);
+          }
+         
         } else {
           // Login failed, display error message
           setError(data.message);
@@ -59,7 +60,7 @@ const Login = () => {
       })
       .catch((error) => {
         console.error('Error:', error);
-        setError('An error occurred during login.');
+        setError('An error occurred during login. ' + error.message);
       });
   };
 

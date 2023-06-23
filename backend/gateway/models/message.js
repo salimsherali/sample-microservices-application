@@ -17,6 +17,7 @@ module.exports = (sequelize, DataTypes) => {
     message: DataTypes.BLOB,
     from_user_id: DataTypes.INTEGER,
     to_user_id: DataTypes.INTEGER,
+    to_number: DataTypes.STRING,
     status: DataTypes.ENUM('pending','process','sent','delivered','failed','un-deliverable','expired','rejected','invalid','unknown','buffered','deleted'),
     create_by: DataTypes.INTEGER
   }, {

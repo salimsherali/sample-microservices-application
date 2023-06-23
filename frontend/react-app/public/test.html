@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>jQuery Onload Example</title>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+  <h1>jQuery Onload Example</h1>
+
+  <script>
+    $(document).ready(function() {
+        alert("Page loaded!");
+        var settings = {
+        "url": "http://gateway.msa.localhost/api/v1/login",
+        "method": "POST",
+        "timeout": 0,
+        "headers": {
+            "Content-Type": "application/json"
+        },
+        "data": JSON.stringify({
+            "username": "admin1@admin.com",
+            "password": "adminadmin1"
+        }),
+        };
+
+       
+        $.ajax(settings).done(function (response) {
+            alert(response);
+        });
+    });
+  </script>
+</body>
+</html>

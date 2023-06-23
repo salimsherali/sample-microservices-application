@@ -1,0 +1,29 @@
+/* Create.css */
+
+.container {
+    max-width: 600px;
+    margin: auto;
+    padding: 20px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-label {
+    font-weight: bold;
+}
+
+.form-control {
+    width: 100%;
+}
+
+.alert {
+    margin-top: 20px;
+}
+
+.btn_container {
+    display: flex;
+    justify-content: flex-end;
+}
+

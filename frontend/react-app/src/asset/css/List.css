@@ -1,0 +1,80 @@
+/* Add these CSS styles to your Message.css file or any other CSS file */
+
+.table-container {
+    margin-top: 20px;
+  }
+  
+  .table-container table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  .table-container th,
+  .table-container td {
+    padding: 8px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .table-container th {
+    background-color: #f2f2f2;
+  }
+  
+  .table-container tr:nth-child(even) {
+    background-color: #f9f9f9;
+  }
+  
+  .table-container .pagination {
+    margin-top: 20px;
+    justify-content: center;
+  }
+  
+  .table-container .page-link {
+    color: #007bff;
+  }
+  
+  .table-container .page-link:hover {
+    color: #0056b3;
+  }
+  
+  .table-container .page-item.active .page-link {
+    background-color: #007bff;
+    border-color: #007bff;
+  }
+  
+  .search-sort-container {
+    display: flex;
+    align-items: center;
+    /* justify-content: flex-end; */
+    margin-bottom: 20px;
+  }
+  
+  .search-container {
+    /* flex: 1;
+    margin-right: 10px; */
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  .search-container input{
+    width: max-content;
+  }
+  
+  .sort-btn {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .sort-btn.active {
+    font-weight: bold;
+  }
+  
+  .arrow-up::before {
+    content: "\2191";
+  }
+  
+  .arrow-down::before {
+    content: "\2193";
+  }
+  

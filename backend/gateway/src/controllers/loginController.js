@@ -12,7 +12,7 @@ async function loginPost(req, res) {
 
     // Check if username and password are provided
     if (!username || !password) {
-        return responseReturn(res, 401, false, 'Username and password are required', {});
+        return responseReturn(res, 200, false, 'Username and password are required', {});
     }
 
     try {

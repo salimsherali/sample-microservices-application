@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/salimsherali/sample-microservices-application#readme",
   "dependencies": {
-    "amqplib": "^0.10.3"
+    "amqplib": "^0.10.3",
+    "axios": "^1.4.0"
   }
 }

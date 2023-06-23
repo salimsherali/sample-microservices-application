@@ -1,0 +1,44 @@
+.dashboard-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    /* padding: 20px; */
+}
+
+.dashboard-container {
+
+    .message-box {
+        margin-top: 20px;
+        padding: 20px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        background-color: #ffffff;
+        width: 300px;
+        height: 150px;
+    }
+
+    .message-box h2 {
+        margin-bottom: 10px;
+    }
+
+    .message-box .badge {
+        font-size: 21px;
+        padding: 8px 12px;
+    }
+
+    .message-box .button-container,
+    .message-box .badge-container {
+        display: flex;
+    }
+
+    .message-box .button-container {
+        justify-content: flex-end;
+        /* Aligns button to the end */
+    }
+
+    .message-box .badge-container {
+        justify-content: flex-start;
+        /* Aligns badge to the start */
+    }
+
+}

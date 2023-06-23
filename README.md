@@ -64,10 +64,14 @@ Step 4.2: Start Listener
 ```bash
     node MessageListener.js
 ```
-Step 5.0: Setup Frontend (Reactjs Application)
+Step 5.0: Setup Worker 
+
+Step 6.0: Setup Frontend (Reactjs Application)
 ```bash
     cd frontend\react-app
     
+    cp .env-example .env
+
     npm install
 
     npm run build or npm start
