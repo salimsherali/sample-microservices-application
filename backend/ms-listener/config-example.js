@@ -1,6 +1,12 @@
 module.exports = {
     message_listener: {
-        path_worker: "MessageWorker/",
+        worker:{
+            host: 'http://localhost:7000/message-worker',
+            basic_auth:{
+                username:'admin',
+                password:'password'
+            }
+        },
         queue_name: "SMA_Message_Q"
     },
     general: {
